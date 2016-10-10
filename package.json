@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "observ-struct": "^6.0.0",
+    "pull-stream": "^3.4.5"
+  },
+  "devDependencies": {
+    "eslint-config-minlint": "^1.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  },
+  "name": "pull-observ-struct",
+  "description": "An isntance of `observ-struct` that listens to a pull stream. Instead of calling `.set` on an observable, connect it to a source stream.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish",
+    "test": "eslint **/*.js && tape test/index.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/pull-observ-struct.git"
+  },
+  "keywords": [
+    "pull",
+    "stream",
+    "pull-stream",
+    "observ",
+    "observ-struct"
+  ],
+  "author": "nichoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/pull-observ-struct/issues"
+  },
+  "homepage": "https://github.com/nichoth/pull-observ-struct#readme"
+}
