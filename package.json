@@ -1,6 +1,6 @@
 {
   "name": "pull-observ-struct",
-  "description": "An isntance of `observ-struct` that listens to a pull stream. Instead of calling `.set` on an observable, connect it to a source stream.",
+  "description": "Observ struct instance from a pull stream",
   "version": "0.0.0",
   "main": "index.js",
   "directories": {
